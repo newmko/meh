@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "meh",
+  "version": "${version}",
+  "name": "MEH",
+  "description": "Highlights the enchantments applied on an item if they're max level.",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/meh/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.hasoi.meh.client.MehClient"
+    ],
+    "main": [
+      "org.hasoi.meh.Meh"
+    ]
+  },
+  "mixins": [
+    "meh.mixins.json",
+    {
+      "config": "meh.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

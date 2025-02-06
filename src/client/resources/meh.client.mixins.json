@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.hasoi.meh.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EnchantmentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
